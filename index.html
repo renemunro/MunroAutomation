@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Munro Automation | Scaling Business via Digital Workforce</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0a'/%3E%3Cpath d='M8 48V14h10l14 16 14-16h10v34h-8V26L32 44 16 26v22z' fill='white'/%3E%3Cpath d='M20 50h24' stroke='%230070f3' stroke-width='4' stroke-linecap='round'/%3E%3Crect x='28' y='45' width='8' height='8' rx='1.5' fill='%230070f3'/%3E%3C/svg%3E"
+    />
+    <meta
+      name="description"
+      content="Munro Automation helps modern businesses scale with Intelligent RPA, Agentic AI, and workflow orchestration built for reliability and growth."
+    />
+    <meta
+      name="keywords"
+      content="Munro Automation, RPA, Agentic AI, workflow automation, n8n, digital workforce, process automation"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#0a0a0a',
+              primary: '#0070f3',
+              panel: '#101114',
+              muted: '#9ca3af'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              body: ['Roboto', 'sans-serif']
+            },
+            boxShadow: {
+              glow: '0 0 0 1px rgba(0,112,243,0.25), 0 8px 32px rgba(0,112,243,0.18)'
+            }
+          }
+        }
+      };
+    </script>
+    <style>
+      body {
+        background: #0a0a0a;
+      }
+
+      .noise::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.06) 0.4px, transparent 0.4px);
+        background-size: 4px 4px;
+        opacity: 0.15;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+
+  <body class="text-white antialiased selection:bg-primary/30 selection:text-white">
+    <header class="sticky top-0 z-50 border-b border-white/10 bg-background/80 backdrop-blur-xl">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+        <a href="#home" class="group flex items-center gap-3">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10 ring-1 ring-primary/40 transition group-hover:bg-primary/20">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 32 32"
+              class="h-7 w-7 text-white"
+              fill="none"
+              aria-hidden="true"
+            >
+              <path d="M4 23V4h5l7 8 7-8h5v19h-4V10l-8 9-8-9v13z" fill="currentColor" />
+              <path d="M10 24h12" stroke="#0070f3" stroke-width="1.8" stroke-linecap="round" />
+              <rect x="10.2" y="24.8" width="2" height="2" rx="0.35" fill="#0070f3" />
+              <rect x="15" y="24.8" width="2" height="2" rx="0.35" fill="#0070f3" />
+              <rect x="19.8" y="24.8" width="2" height="2" rx="0.35" fill="#0070f3" />
+            </svg>
+          </span>
+          <div>
+            <p class="text-sm font-semibold leading-tight tracking-wide">Munro Automation</p>
+            <p class="text-[11px] text-muted">Scaling Business via Digital Workforce</p>
+          </div>
+        </a>
+
+        <nav aria-label="Main navigation" class="hidden items-center gap-8 text-sm md:flex">
+          <a href="#services" class="text-gray-300 transition hover:text-white">Services</a>
+          <a href="#case-studies" class="text-gray-300 transition hover:text-white">Case Studies</a>
+          <a
+            href="#contact"
+            class="rounded-lg bg-primary px-4 py-2 font-medium text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-blue-500"
+          >
+            Book a Strategy Call
+          </a>
+        </nav>
+
+        <a
+          href="#contact"
+          class="rounded-lg bg-primary px-3 py-2 text-sm font-medium text-white transition hover:bg-blue-500 md:hidden"
+        >
+          Book Call
+        </a>
+      </div>
+    </header>
+
+    <main id="home" class="relative isolate overflow-hidden">
+      <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10">
+        <div class="absolute -top-36 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-primary/20 blur-3xl"></div>
+        <div class="absolute bottom-[-120px] right-0 h-80 w-80 rounded-full bg-blue-900/20 blur-3xl"></div>
+      </div>
+
+      <section class="noise relative mx-auto max-w-7xl px-4 pb-20 pt-20 sm:px-6 sm:pt-28 lg:px-8">
+        <div class="mx-auto max-w-4xl text-center">
+          <p class="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/35 bg-primary/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-blue-200">
+            <span class="h-1.5 w-1.5 animate-pulse rounded-full bg-primary"></span>
+            AI-Powered Process Transformation
+          </p>
+          <h1 class="text-balance text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
+            Automate the Mundane.
+            <span class="bg-gradient-to-r from-white to-blue-300 bg-clip-text text-transparent">Scale the Complex.</span>
+          </h1>
+          <p class="mx-auto mt-6 max-w-3xl text-pretty font-body text-base text-gray-300 sm:text-lg">
+            Merging Robotic Process Automation (RPA) with Agentic AI to build resilient,
+            self-thinking digital workflows.
+          </p>
+
+          <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+            <a
+              href="#contact"
+              class="inline-flex w-full items-center justify-center rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-glow transition duration-200 hover:-translate-y-0.5 hover:bg-blue-500 sm:w-auto"
+            >
+              Book a Strategy Call
+            </a>
+            <a
+              href="#services"
+              class="inline-flex w-full items-center justify-center rounded-xl border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-primary/50 hover:bg-white/10 sm:w-auto"
+            >
+              Explore Services
+            </a>
+          </div>
+
+          <dl class="mx-auto mt-12 grid max-w-3xl grid-cols-1 gap-4 text-left sm:grid-cols-3">
+            <div class="rounded-xl border border-white/10 bg-panel/80 p-4">
+              <dt class="text-xs uppercase tracking-wider text-muted">Operational Uptime</dt>
+              <dd class="mt-1 text-xl font-bold text-white">24/7</dd>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-panel/80 p-4">
+              <dt class="text-xs uppercase tracking-wider text-muted">Process Efficiency</dt>
+              <dd class="mt-1 text-xl font-bold text-white">Up to 80%</dd>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-panel/80 p-4">
+              <dt class="text-xs uppercase tracking-wider text-muted">Deployment Model</dt>
+              <dd class="mt-1 text-xl font-bold text-white">Scalable</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="services" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div class="mb-10 text-center">
+          <p class="text-xs uppercase tracking-[0.2em] text-primary">Services</p>
+          <h2 class="mt-3 text-3xl font-bold sm:text-4xl">Built to Perform at Enterprise Speed</h2>
+          <p class="mx-auto mt-4 max-w-2xl text-sm text-gray-300 sm:text-base">
+            We design digital workforce systems that automate repetitive operations, augment decisions, and orchestrate mission-critical flows.
+          </p>
+        </div>
+
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <article class="group rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-6 transition hover:-translate-y-1 hover:border-primary/50 hover:shadow-glow">
+            <div class="inline-flex rounded-xl bg-primary/15 p-3 ring-1 ring-primary/40">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.143 2.143 0 01-2.143 2.143H3.104m6.646-7.857L3.818 8.036m5.932-4.932h6.964a2.143 2.143 0 012.143 2.143v13.5a2.143 2.143 0 01-2.143 2.143H7.286a2.143 2.143 0 01-2.143-2.143V8.036" />
+              </svg>
+            </div>
+            <h3 class="mt-5 text-xl font-semibold">Intelligent RPA</h3>
+            <p class="mt-3 font-body text-sm leading-relaxed text-gray-300">
+              High-uptime bots for structured, 24/7 data processing—minimizing manual workload while improving speed, consistency, and auditability.
+            </p>
+          </article>
+
+          <article class="group rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-6 transition hover:-translate-y-1 hover:border-primary/50 hover:shadow-glow">
+            <div class="inline-flex rounded-xl bg-primary/15 p-3 ring-1 ring-primary/40">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.455L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.455L18 2.25l.259 1.036a3.375 3.375 0 002.455 2.455L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.455zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423L16.5 15.75l.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+              </svg>
+            </div>
+            <h3 class="mt-5 text-xl font-semibold">Agentic AI &amp; GenAI</h3>
+            <p class="mt-3 font-body text-sm leading-relaxed text-gray-300">
+              Developing digital brains that reason, classify, and decide using LLMs—bringing intelligence to your most complex process layers.
+            </p>
+          </article>
+
+          <article class="group rounded-2xl border border-white/10 bg-gradient-to-b from-white/10 to-white/5 p-6 transition hover:-translate-y-1 hover:border-primary/50 hover:shadow-glow md:col-span-2 xl:col-span-1">
+            <div class="inline-flex rounded-xl bg-primary/15 p-3 ring-1 ring-primary/40">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </div>
+            <h3 class="mt-5 text-xl font-semibold">Workflow Orchestration</h3>
+            <p class="mt-3 font-body text-sm leading-relaxed text-gray-300">
+              Seamlessly connecting n8n, cloud ecosystems, and legacy APIs so every tool in your stack behaves like one coordinated system.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
+        <div class="rounded-2xl border border-primary/30 bg-gradient-to-r from-primary/15 via-primary/5 to-transparent p-6 sm:p-8">
+          <p class="text-xs uppercase tracking-[0.2em] text-blue-200">Engineered by</p>
+          <div class="mt-4 grid gap-4 sm:grid-cols-2">
+            <div class="rounded-xl border border-white/15 bg-black/20 p-4">
+              <p class="text-sm font-semibold">Google Cloud Certified (GenAI Focus)</p>
+              <p class="mt-1 text-sm text-gray-300">Built with modern AI architecture standards, security-first deployment patterns, and production-ready cloud strategy.</p>
+            </div>
+            <div class="rounded-xl border border-white/15 bg-black/20 p-4">
+              <p class="text-sm font-semibold">Architected for Scalability</p>
+              <p class="mt-1 text-sm text-gray-300">From pilot workflows to enterprise-wide automation programs—designed to grow with your process complexity.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="case-studies" class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+        <div class="mb-10 text-center">
+          <p class="text-xs uppercase tracking-[0.2em] text-primary">Case Studies</p>
+          <h2 class="mt-3 text-3xl font-bold sm:text-4xl">Measured Outcomes, Not Just Promises</h2>
+        </div>
+        <div class="grid gap-6 lg:grid-cols-3">
+          <article class="rounded-2xl border border-white/10 bg-panel/80 p-6">
+            <p class="text-sm text-blue-200">Finance Ops Automation</p>
+            <h3 class="mt-2 text-lg font-semibold">Invoice Processing Pipeline</h3>
+            <p class="mt-3 text-sm text-gray-300">Cut manual handling by 72% with intelligent document extraction, validation, and ERP posting bots.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-panel/80 p-6">
+            <p class="text-sm text-blue-200">Customer Service AI</p>
+            <h3 class="mt-2 text-lg font-semibold">Agentic Ticket Triage</h3>
+            <p class="mt-3 text-sm text-gray-300">Reduced first-response time by 58% by classifying, enriching, and routing tickets with decision-aware AI agents.</p>
+          </article>
+          <article class="rounded-2xl border border-white/10 bg-panel/80 p-6">
+            <p class="text-sm text-blue-200">Operations Orchestration</p>
+            <h3 class="mt-2 text-lg font-semibold">Cross-System Workflow Hub</h3>
+            <p class="mt-3 text-sm text-gray-300">Unified fragmented tools into one event-driven backbone using n8n, APIs, and cloud-native automations.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="mx-auto max-w-4xl px-4 pb-20 sm:px-6 lg:px-8 lg:pb-24">
+        <div class="rounded-3xl border border-white/20 bg-white/10 p-6 shadow-2xl backdrop-blur-xl sm:p-8 lg:p-10">
+          <div class="mb-8 text-center">
+            <p class="text-xs uppercase tracking-[0.2em] text-primary">Lead Capture</p>
+            <h2 class="mt-3 text-3xl font-bold sm:text-4xl">Let’s Build Your Digital Workforce</h2>
+            <p class="mx-auto mt-3 max-w-2xl text-sm text-gray-300">Tell us what you want to automate, and we’ll map a strategy that drives measurable ROI.</p>
+            <p class="mx-auto mt-4 flex flex-col items-center justify-center gap-1 text-sm text-gray-200 sm:flex-row sm:gap-4">
+              <a href="mailto:rene@munroautomation.com" class="transition hover:text-primary">rene@munroautomation.com</a>
+              <span class="hidden text-gray-500 sm:inline">•</span>
+              <a href="tel:+526623070468" class="transition hover:text-primary">+52 6623070468</a>
+            </p>
+          </div>
+
+          <form id="leadForm" class="space-y-4">
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <label class="block text-sm">
+                <span class="mb-1.5 block text-gray-200">Name</span>
+                <input
+                  type="text"
+                  name="name"
+                  autocomplete="name"
+                  required
+                  class="w-full rounded-xl border border-white/15 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/35"
+                  placeholder="Jane Smith"
+                />
+              </label>
+              <label class="block text-sm">
+                <span class="mb-1.5 block text-gray-200">Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  required
+                  class="w-full rounded-xl border border-white/15 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/35"
+                  placeholder="jane@acme.com"
+                />
+              </label>
+              <label class="block text-sm">
+                <span class="mb-1.5 block text-gray-200">Company</span>
+                <input
+                  type="text"
+                  name="company"
+                  autocomplete="organization"
+                  required
+                  class="w-full rounded-xl border border-white/15 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/35"
+                  placeholder="Acme Corp"
+                />
+              </label>
+            </div>
+
+            <label class="block text-sm">
+              <span class="mb-1.5 block text-gray-200">Process to Automate</span>
+              <textarea
+                name="process"
+                rows="5"
+                required
+                class="w-full rounded-xl border border-white/15 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/35"
+                placeholder="Describe the workflow, systems involved, and your bottlenecks..."
+              ></textarea>
+            </label>
+
+            <button
+              id="submitBtn"
+              type="submit"
+              class="inline-flex w-full items-center justify-center rounded-xl bg-primary px-6 py-3 text-sm font-semibold text-white shadow-glow transition hover:-translate-y-0.5 hover:bg-blue-500"
+            >
+              Book a Strategy Call
+            </button>
+            
+            <p id="successMsg" class="hidden mt-4 text-center text-sm font-medium text-green-400">
+              Message received! We will be in touch shortly.
+            </p>
+          </form>
+
+          <script>
+            document.getElementById('leadForm').addEventListener('submit', function(e) {
+              e.preventDefault(); 
+              
+              const btn = document.getElementById('submitBtn');
+              const msg = document.getElementById('successMsg');
+              
+              // Cambiar estado del botón mientras se envía
+              btn.innerText = 'Sending...';
+              btn.disabled = true;
+              btn.classList.add('opacity-70', 'cursor-not-allowed');
+
+              const formData = new FormData(this);
+              const urlEncodedData = new URLSearchParams(formData).toString();
+
+              fetch('https://n8n.theautomationbots.xyz/webhook/contact-munro', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: urlEncodedData
+              })
+              .then(response => {
+                // Al tener éxito, ocultar el botón y mostrar el mensaje
+                btn.style.display = 'none'; 
+                msg.classList.remove('hidden'); 
+              })
+              .catch(error => {
+                // Si falla por problemas de red
+                btn.innerText = 'Error. Please try again.';
+                btn.disabled = false;
+                btn.classList.remove('opacity-70', 'cursor-not-allowed');
+              });
+            });
+          </script>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-[#070707]">
+      <div class="mx-auto flex max-w-7xl flex-col gap-6 px-4 py-8 text-sm text-gray-300 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
+        <div>
+          <p class="font-semibold text-white">Munro Automation</p>
+          <p class="mt-1">Scaling Business via Digital Workforce</p>
+          <p class="mt-2 text-xs text-gray-400">
+            <a href="mailto:rene@munroautomation.com" class="transition hover:text-primary">rene@munroautomation.com</a>
+            <span class="mx-2 text-gray-600">|</span>
+            <a href="tel:+526623070468" class="transition hover:text-primary">+52 6623070468</a>
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-5">
+          <a href="#services" class="transition hover:text-white">Services</a>
+          <a href="#case-studies" class="transition hover:text-white">Case Studies</a>
+          <a href="#contact" class="transition hover:text-white">Contact</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="#" aria-label="LinkedIn" class="rounded-lg border border-white/15 p-2 transition hover:border-primary/50 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+              <path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V23h-4V8zM8 8h3.8v2h.1c.53-1 1.84-2 3.8-2 4.06 0 4.8 2.67 4.8 6.14V23h-4v-6.94c0-1.66-.03-3.79-2.31-3.79-2.31 0-2.67 1.8-2.67 3.67V23H8V8z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="X" class="rounded-lg border border-white/15 p-2 transition hover:border-primary/50 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+              <path d="M18.244 2H21l-6.56 7.5L22 22h-6.88l-5.39-6.98L3.7 22H1l7.02-8.02L1 2h7.06l4.88 6.35L18.244 2zm-2.41 18h1.95L7.01 3.9H4.93L15.834 20z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="GitHub" class="rounded-lg border border-white/15 p-2 transition hover:border-primary/50 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4">
+              <path fill-rule="evenodd" d="M12 2C6.48 2 2 6.58 2 12.22c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.5 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.2-3.37-1.2-.45-1.18-1.11-1.49-1.11-1.49-.9-.63.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.08 0-1.12.39-2.04 1.03-2.76-.1-.26-.45-1.31.1-2.74 0 0 .84-.28 2.75 1.05A9.29 9.29 0 0112 6.84c.85 0 1.71.12 2.51.35 1.9-1.33 2.74-1.05 2.74-1.05.56 1.43.21 2.48.1 2.74.64.72 1.03 1.64 1.03 2.76 0 3.95-2.34 4.82-4.58 5.07.36.32.68.94.68 1.9 0 1.38-.01 2.49-.01 2.83 0 .28.18.61.69.5A10.23 10.23 0 0022 12.22C22 6.58 17.52 2 12 2z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
