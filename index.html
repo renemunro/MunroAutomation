@@ -272,7 +272,7 @@
           </div>
 
           <form id="leadForm" class="space-y-4">
-            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               <label class="block text-sm">
                 <span class="mb-1.5 block text-gray-200">Name</span>
                 <input
@@ -293,6 +293,16 @@
                   required
                   class="w-full rounded-xl border border-white/15 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/35"
                   placeholder="jane@acme.com"
+                />
+              </label>
+              <label class="block text-sm">
+                <span class="mb-1.5 block text-gray-200">Phone</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  autocomplete="tel"
+                  class="w-full rounded-xl border border-white/15 bg-black/30 px-4 py-3 text-sm text-white placeholder:text-gray-400 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/35"
+                  placeholder="+1 234 567 890"
                 />
               </label>
               <label class="block text-sm">
